@@ -1,0 +1,153 @@
+@import "../../scss/colors.scss";
+
+.form {
+
+  &--grey {
+    & .form__input {
+      border: 1px solid rgba(27, 27, 27, 0.45);
+
+      &::placeholder {
+        color: rgba(27, 27, 27, 0.45);
+      }
+    }
+
+    & .form__submit {
+      background-color: $red;
+      color: $white;
+    }
+  }
+
+  &--white {
+    & .form__input {
+      border: 1px solid $white;
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+
+    & .form__submit {
+      background-color: $black;
+      border: 1px solid $black;
+      color: $white;
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    @media screen and (max-width: 992px) {
+      column-gap: 10px;
+    }
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+
+  &__field {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    padding: 18px 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-size: 20px;
+    line-height: 120%;
+    border: 1px solid var(--Gray-4, #BDBDBD);
+
+    @media screen and (max-width: 1441px) {
+      height: 55px;
+    }
+    @media screen and (max-width: 992px) {
+      height: 50px;
+      padding: 15px 12px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+    @media screen and (max-width: 769px) {
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    &::placeholder {
+      font-size: 18px;
+      line-height: 120%;
+
+      @media screen and (max-width: 992px) {
+        font-size: 14px;
+      }
+      @media screen and (max-width: 769px) {
+        font-size: 16px;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 105%;
+
+    cursor: pointer;
+    transition: 0.2s;
+
+    @media screen and (max-width: 1441px) {
+      height: 55px;
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 992px) {
+      height: 50px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 576px) {
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+    @media screen and (max-width: 769px) {
+      flex-direction: column-reverse;
+      row-gap: 10px;
+      max-width: 400px;
+      width: 100%;
+    }
+  }
+}

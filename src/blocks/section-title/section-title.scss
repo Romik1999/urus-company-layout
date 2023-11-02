@@ -1,0 +1,24 @@
+@import "../../scss/colors.scss";
+
+.section-title {
+  color: #072E52;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 110%;
+  text-align: center;
+  margin: 0;
+
+  @media screen and (max-width: 1441px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 1199px) {
+    font-size: 35px;
+  }
+  @media screen and (max-width: 1025px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 769px) {
+    font-size: 25px;
+  }
+}

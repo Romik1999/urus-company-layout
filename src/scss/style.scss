@@ -3,16 +3,18 @@
 @import "./buttons";
 @import "./colors";
 
-@import "../blocks/header/header";
+@import "../blocks/section-title/section-title";
+@import "../blocks/section-subtitle/section-subtitle";
+@import "../blocks/address/address";
+@import "../blocks/menu/menu";
+@import "../blocks/logo/logo";
 @import "../blocks/close/close";
 @import "../blocks/form/form";
+@import "../blocks/header/header";
 @import "../blocks/modal/modal";
 @import "../blocks/thanks/thanks";
 @import "../blocks/hero/hero";
 @import "../blocks/advantages/advantages";
 @import "../blocks/quiz/quiz";
 @import "../blocks/footer/footer";
-@import "../blocks/address/address";
-@import "../blocks/menu/menu";
-@import "../blocks/logo/logo";
 @import "../blocks/last/last";

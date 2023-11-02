@@ -1,0 +1,36 @@
+@import "../../scss/colors.scss";
+
+.menu {
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 46px;
+    padding: 0;
+    list-style: none;
+
+    @media screen and (max-width: 1199px) {
+      column-gap: 20px;
+    }
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+
+  &__link {
+    color: #072E52;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    text-decoration: none;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 769px) {
+      font-size: 16px;
+    }
+  }
+}

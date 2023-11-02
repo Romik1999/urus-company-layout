@@ -1,0 +1,13 @@
+@import "../../scss/colors.scss";
+
+.logo {
+  width: 100%;
+  display: flex;
+
+  & img,
+  & svg {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+

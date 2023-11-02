@@ -1,10 +1,58 @@
 <footer class="footer">
     <div class="cont">
-        <div class="footer__wrapper">
-            <a class="footer__policy" href="./policy">Политика конфиденциальности</a>
-            <div class="footer__text">
-                ИНН 7111020622 ОГРН 1167154050260 г. Тула, пр-т Ленина, д. 85, корп. 7, эт. 1, оф. 1
+        <div class="footer__wrapper footer__wrapper--pc">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    @@include('logo/logo.html')
+                </div>
             </div>
+            <div class="footer__col">
+                <div class="footer__menu">
+                    @@include('menu/menu.html', {colorClass: 'blue'})
+                </div>
+                <div class="footer__text">
+                    ООО "ЮРУС-ГРУПП" Контакты: 443099, РОССИЯ, САМАРСКАЯ ОБЛ, Г САМАРА,
+                    ул. 4 проезд, 66, лит 5Х, 2 этаж, ОГРН 1226300024642, ИНН 6317159626,
+                    КПП 631701001
+                </div>
+                <a class="footer__policy" href="./policy">Политика конфиденциальности</a>
+            </div>
+            <div class="footer__col">
+                <div class="footer__address">
+                    @@include('address/address.html')
+                </div>
+                <a class="footer__phone" href="tel:+78005006884">+7 (800) 500-68-84</a>
+            </div>
+        </div>
+        <div class="footer__wrapper footer__wrapper--mob">
+            <div class="footer__logo">
+                @@include('logo/logo.html')
+            </div>
+            <div class="footer__menu">
+                @@include('menu/menu.html', {colorClass: 'blue'})
+            </div>
+            <div class="footer__address">
+                @@include('address/address.html')
+            </div>
+            <div class="footer__socials">
+                <a class="footer__social" href="#">
+                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.626953" width="40" height="40" fill="#CA534B"/>
+                    </svg>
+                </a>
+                <a class="footer__social" href="#">
+                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.626953" width="40" height="40" fill="#CA534B"/>
+                    </svg>
+                </a>
+            </div>
+            <a class="footer__phone" href="tel:+78005006884">+7 (800) 500-68-84</a>
+            <div class="footer__text">
+                ООО "ЮРУС-ГРУПП" Контакты: 443099, РОССИЯ, САМАРСКАЯ ОБЛ, Г САМАРА,
+                ул. 4 проезд, 66, лит 5Х, 2 этаж, ОГРН 1226300024642, ИНН 6317159626,
+                КПП 631701001
+            </div>
+            <a class="footer__policy" href="./policy">Политика конфиденциальности</a>
         </div>
     </div>
 </footer>

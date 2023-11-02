@@ -13,9 +13,17 @@
           column-gap: 46px;
   padding: 0;
   list-style: none;
+  margin: 0;
+}
+
+.menu.white .menu__link {
+  color: #ffffff;
 }
 
 .menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #072E52;
   font-size: 20px;
   font-style: normal;

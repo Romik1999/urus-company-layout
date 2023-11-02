@@ -8,6 +8,7 @@
     column-gap: 46px;
     padding: 0;
     list-style: none;
+    margin: 0;
 
     @media screen and (max-width: 1199px) {
       column-gap: 20px;
@@ -18,7 +19,14 @@
     }
   }
 
+  &.white{
+    & .menu__link {
+      color: $white;
+    }
+  }
+
   &__link {
+    display: flex;
     color: #072E52;
     font-size: 20px;
     font-style: normal;

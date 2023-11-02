@@ -37,16 +37,17 @@
 
 @media screen and (max-width: 769px) {
   .address__top {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 18px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 13px;
   }
 
   .address__bottom {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 18px;
+    font-size: 13px;
+    max-width: 180px;
   }
 }

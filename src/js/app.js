@@ -1,4 +1,34 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+
+    new Swiper('.swiper', {
+        navigation: {
+            nextEl: '.reviews-slider--next',
+            prevEl: '.reviews-slider--prev'
+        },
+        pagination: {
+            el: ".reviews-slider--pagination",
+            clickable: true
+        },
+        slidesPerView: 3,
+        spaceBetween: 20,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2
+            },
+            992: {
+                slidesPerView: 3
+            }
+        }
+    });
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
+
     // функция для модалки
     function calcScroll() {
         let div = document.createElement('div');

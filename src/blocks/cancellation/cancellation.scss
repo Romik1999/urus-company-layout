@@ -3,6 +3,7 @@
 .cancellation {
   padding-top: 65px;
   overflow: hidden;
+  padding-bottom: 0;
 
   &__title {
     margin-bottom: 15px;
@@ -26,14 +27,14 @@
 
   &__items {
     padding-top: 140px;
-    padding-bottom: 176px;
+    padding-bottom: 140px;
     display: flex;
     flex-direction: column;
     row-gap: 50px;
 
     @media screen and (max-width: 1441px) {
       padding-top: 100px;
-      padding-bottom: 150px;
+      padding-bottom: 100px;
     }
     @media screen and (max-width: 1199px) {
       padding-top: 80px;
@@ -47,7 +48,7 @@
 
   &__img {
     position: absolute;
-    top: -20%;
+    top: -7%;
     right: 0;
     display: flex;
     width: 59%;

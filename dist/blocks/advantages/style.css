@@ -140,6 +140,10 @@
 }
 
 @media screen and (max-width: 769px) {
+  .advantages {
+    padding-top: 60px;
+  }
+
   .advantages__img {
     max-width: 370px;
   }
